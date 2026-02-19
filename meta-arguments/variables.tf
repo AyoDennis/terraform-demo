@@ -4,11 +4,27 @@ variable "content" {
   default     = "This is us trying meta arguments"
 }
 
+# variable "filename" {
+#   type        = list(string)
+#   description = "try to explain it in quotes"
+#   default     = ["dec2", "dec3", "dec4", "dec5"]
+# }
+
+
+# # Convert list variable above to set
+# variable "filename" {
+#   type        = set(string)
+#   description = "try to explain it in quotes"
+#   default     = ["dec1", "dec2", "dec3", "dec4", "dec5"]
+# }
+
+# Using list variable, but set in main.tf
 variable "filename" {
   type        = list(string)
   description = "try to explain it in quotes"
-  default     = ["dec1", "dec2", "dec3", "jesuniyi", "yussuf"]
+  default     = ["dec2", "dec3", "dec4", "dec5"]
 }
+
 
 
 
