@@ -1,13 +1,13 @@
 variable "content" {
   type        = string
   description = "try to explain it in quotes"
-  default     = "This is us trying terraform lifecycle rule: ignore changes test"
+  default     = "Not Testing immutability"
 }
 
 variable "filename" {
   type        = string
   description = "try to explain it in quotes"
-  default     = "dec"
+  default     = "test.txt"
 }
 
 

@@ -1,12 +1,25 @@
 resource "local_file" "terraform-file" {
-  content  = data.local_file.locally-created.content
+  content  = var.content
   filename = var.filename
 
 }
 
-data "local_file" "locally-created" {
-  filename = "adebola.txt"
-}
+# data "local_file" "locally-created" {
+#   filename = "adebola.txt"
+# }
+
+
+
+
+# resource "local_file" "terraform-file" {
+#   content  = data.local_file.locally-created.content
+#   filename = var.filename
+
+# }
+
+# data "local_file" "locally-created" {
+#   filename = "adebola.txt"
+# }
 
 
 # resource "random_pet" "pet-name" {
